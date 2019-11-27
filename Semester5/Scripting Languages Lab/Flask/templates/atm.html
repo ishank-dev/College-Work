@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATM</title>
+</head>
+<body>
+<h1>My ATM</h1>
+<h3>Your current balance is {{balance}}</h3>
+<h4>{{msg}}</h4>
+<h4>Count value is {{count}}</h4>
+<form action = "{{url_for('index')}}" method = 'POST' id = 'atm'>
+	Amount<input type="text" name="amount" type = "number">
+	<input type="submit" value = "withdraw" name="action">
+	<input type="submit" value = "deposit" name="action">
+</form>
+</body>
+</html>
