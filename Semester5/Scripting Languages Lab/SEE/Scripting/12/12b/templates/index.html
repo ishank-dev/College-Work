@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATM</title>
+</head>
+<body>
+<h2>Balance: {{balance}}</h2><br>
+<h3>Result Message: {{msg}}</h3>
+<form action="{{url_for('index')}}" method="POST" id="atm">
+	<input name = "amount" type="number" id="amt" required /><br>
+	<input type="submit" name="action" value="Withdraw" onclick="check()">
+	<input type="submit" name="action" value="Deposit" onclick="check()">
+</form>
+<script>
+	function check(){
+	var amt = document.getElementById('amt').value
+	if(amt=""||parseInt(amt)<0)
+	alert('Invalid amount entry')
+	if({{cnt}}==5)
+	alert('Transaction limit reached')
+    }
+    </script>
+</body>
+</html>

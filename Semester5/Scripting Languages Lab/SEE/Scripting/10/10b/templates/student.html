@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Student Registration
+    </title>
+</head>
+<body>
+<h2>Result Message: {{msg}}</h2>
+<form action="{{url_for('index')}}" method="POST">
+    USN(ex:1MS17IS077) <input type="text" name="usn" id="usn"><br>
+    DOB(ex:16/12/1998) <input type="text" name="dob" id="dob"><br>
+    M1 <input type="number" name="m1" id="m1"><br>
+    M2 <input type="number" name="m2" id="m2"><br>
+    M3 <input type="number" name="m3" id="m3"><br><br>
+    <input type="submit" name="action" value="Submit" onclick="check()">
+</form>
+<script>
+    function check(){
+        if(document.getElementById('usn').value==""||document.getElementById('dob').value==""||document.getElementById('m1').value==""||
+        document.getElementById('m1').value==""||document.getElementById('m2').value==""||document.getElementById('m3').value=="")
+        alert('Empty fields not allowed')
+    }
+</script>
+</body>
+</html>

@@ -11,8 +11,8 @@ create table assigned_to(
 	ssn int,
 	projectNo int,
 	primary key(ssn,projectNo),
-	foreign key(ssn) references employee(ssn) on delete cascade,
-	foreign key(projectNo) references project(projectNo) on delete cascade);
+	foreign key(ssn) references employee(ssn) on delete cascade on update cascade,
+	foreign key(projectNo) references project(projectNo) on delete cascade on update cascade);
 
 insert into employee values(1,'abc',10);
 insert into employee values(2,'def',25);

@@ -1,4 +1,4 @@
-#include<stdio.h>
+*#include<stdio.h>
 struct node
 {
     int dist[20];
@@ -38,7 +38,7 @@ int main()
         int source = 0;
             printf("\n For router %d\n",source+1);
             for(i=0;i<nodes;i++)
-            printf("\t\nnode %d via %d Distance %d",i+1,rt[source].from[i]+1,rt[source].dist[i]);
+            printf("\t\nDistance of source from node %d via %d Distance %d",i+1,rt[source].from[i]+1,rt[source].dist[i]);
         
     printf("\n\n");
 

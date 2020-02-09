@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Items
+        </title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Item Catalogue</legend>
+            <input type="text" id="itemname" required><br><br>
+            <select id="itemprice" required>
+                <option value="300">300</option>
+                <option value="500">500</option>
+                <option value="700">700</option>
+            </select><br><br>
+            <input type="number" id="itemqty" required><br><br>
+            <button type="submit" value="Submit" onclick="calc()">Submit</button>
+        </fieldset>
+        <h2>Result Amount:</h2>
+        <p id="res"></p>
+        <button id="paid" onclick="display()" disabled>Paid</button>
+        <script>
+            function calc(){
+                document.getElementById('res').innerHTML=parseInt(document.getElementById('itemqty').value)*parseInt(document.getElementById('itemprice').value)
+                document.getElementById('paid').disabled=false
+            }
+
+            function display(){
+                alert("Paid: "+document.getElementById('res').innerHTML)
+                document.getElementById('paid').disabled=true
+            }
+        </script>
+    </body>
+</html>

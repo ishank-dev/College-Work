@@ -1,4 +1,4 @@
-#To simulate three node point-to-point network with duplex links and to find the no. of packets dropped by setting the queue size and varying bsndwidth
+#To simulate three node point-to-point network with duplex links and to find the no. of packets dropped by setting the queue size and varying bandwidth
 
 set ns [new Simulator]
 

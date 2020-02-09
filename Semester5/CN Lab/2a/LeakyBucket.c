@@ -6,7 +6,7 @@ int main(){
     int rate=10,drop=0,cap=100,x,count=0,inp[30]={0},i=0,nsec,ch;
     printf("\n Bucket size : %d",cap);
     printf("\n Output rate : %d",rate);
-    srand(time(0));
+    //srand(time(0));
     do{
         inp[i]=rand()%200;
         printf("\n Number of packets coming at second %d : %d",(i+1),inp[i]);

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello</title>
+</head>
+<body>
+<h1>Items in the Cart</h1>
+{%for item in cart%}
+{{item["name"]}} --> {{item['quantity']}}<br>
+{%endfor%}
+</body>
+</html>

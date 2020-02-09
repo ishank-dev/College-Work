@@ -1,0 +1,5 @@
+db.warehouse.insert({"pno":1,"pname":'bolts',"color":'green',"sno":1,"sname":'abc',"address":'blore'})
+db.warehouse.insert({"pno":2,"pname":'chain',"color":'red',"sno":2,"sname":'xyz',"address":'blore'})
+db.warehouse.insert({"pno":3,"pname":'chain',"color":'orange',"sno":3,"sname":'abc',"address":'blore'})
+db.warehouse.insert({"pno":4,"pname":'bolts',"color":'purple',"sno":4,"sname":'def',"address":'blore'})
+db.warehouse.insert({"pno":5,"pname":'bolts',"color":'orange',"sno":5,"sname":'pqr',"address":'blore'})

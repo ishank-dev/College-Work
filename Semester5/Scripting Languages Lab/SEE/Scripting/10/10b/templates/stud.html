@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flask</title>
+</head>
+<body>
+<form action="{{url_for('index')}}" method  = "POST">
+		Name:<input type="text" name="name",required>
+		USN:<input type="text" name="usn",required>
+		Marks1:<input type="number" name="marks1",required>
+		Marks2:<input type="number" name="marks2",required>
+		Marks3:<input type="number" name="marks3",required>
+	<input type="Submit" name="" value = "Submit">
+</form>
+<h1>{{msg}}</h1>
+</body>
+</html>

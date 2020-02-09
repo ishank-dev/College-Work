@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Json Program</title>
+</head>
+<body>
+	<h1>The author json program</h1>
+	<table border="1">
+		<tr>
+			<th>Author Name</th>
+			<th>Story Title</th>
+			<th>Native</th>
+		</tr>
+		<tr>
+			<td id="id1"></td>
+			<td id="id2"></td>
+			<td id="yo"></td>
+		</tr>
+		<tr>
+			<td id="id3"></td>
+			<td id="id4"></td>
+		</tr>
+	</table>
+	<br>
+	<p id="id5"></p>
+	<p id="id6"></p>
+	<br>
+	<p id="id7"></p>
+	<p id="id8"></p>
+	<script>
+		var jobject = {
+			author:[
+			{ name: "Aman",title: "The best", native:"India"},
+			{ name: "Harry",title: "The worst"},
+			{ name: "Joseph",title: "The better"},
+			{ name: "Tim",title: "The good"}
+		]}
+		var myjson = JSON.stringify(jobject);
+		var obj = JSON.parse(myjson);
+		document.querySelector("#id1").innerHTML = obj.author[0].name;
+		document.querySelector("#id2").innerHTML = obj.author[0].title;
+		document.querySelector("#yo").innerHTML = obj.author[0].native;
+		document.querySelector("#id3").innerHTML = obj.author[1].name;
+		document.querySelector("#id4").innerHTML = obj.author[1].title;
+		document.querySelector("#id5").innerHTML = obj.author[2].name;
+		document.querySelector("#id6").innerHTML = obj.author[2].title;
+		document.querySelector("#id7").innerHTML = obj.author[3].name;
+		document.querySelector("#id8").innerHTML = obj.author[3].title;
+</script>
+</body>
+</html>

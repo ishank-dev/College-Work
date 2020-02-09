@@ -1,5 +1,4 @@
 #To simulate 4 node point-to-point network with links n0->n2, n1->n2 and n2->n3. Apply TCP agent parameters and determine the no. of packets sent/received by TCP/UDP. 
-
 set ns [new Simulator]
 
 set traceFile [open 3.tr w]

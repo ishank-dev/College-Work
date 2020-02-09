@@ -3,10 +3,10 @@ A -t * -n 1 -p 0 -o 0x7fffffff -c 30 -a 1
 A -t * -h 1 -m 1073741823 -s 0
 c -t * -i 1 -n red
 c -t * -i 2 -n blue
-n -t * -a 4 -s 4 -S UP -v circle -c blue -i blue
-n -t * -a 0 -s 0 -S UP -v circle -c blue -i blue
-n -t * -a 5 -s 5 -S UP -v box -c red -i red
-n -t * -a 1 -s 1 -S UP -v box -c red -i red
+n -t * -a 4 -s 4 -S UP -v circle -c black -i black
+n -t * -a 0 -s 0 -S UP -v circle -c black -i black
+n -t * -a 5 -s 5 -S UP -v circle -c black -i black
+n -t * -a 1 -s 1 -S UP -v circle -c black -i black
 n -t * -a 6 -s 6 -S UP -v circle -c black -i black
 n -t * -a 2 -s 2 -S UP -v circle -c black -i black
 n -t * -a 3 -s 3 -S UP -v circle -c black -i black
