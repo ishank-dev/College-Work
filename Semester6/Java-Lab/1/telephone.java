@@ -48,7 +48,7 @@ public class telephone
 
 		while(true)
 		{
-			System.out.println("1)Add missed calls\n2)Check call history\n3)Delete missed calls\n4)Exit: ");
+			System.out.println("\n1)Add missed calls\n2)Check call history\n3)Delete missed calls\n4)Exit: ");
 			int ch = sc.nextInt();
 			switch(ch)
 			{
