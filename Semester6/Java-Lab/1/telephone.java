@@ -32,7 +32,7 @@ class Caller
 public class telephone
 {
 	public static void main(String[] args)
-	{
+	{	
 		int count = 0;
 		Scanner sc = new Scanner(System.in);
 		Calendar c = Calendar.getInstance();
@@ -48,7 +48,7 @@ public class telephone
 
 		while(true)
 		{
-			System.out.println("\n1)Add missed calls\n2)Check call history\n3)Delete missed calls\n4)Exit: ");
+			System.out.println("1)Add missed calls\n2)Check call history\n3)Delete missed calls\n4)Exit: ");
 			int ch = sc.nextInt();
 			switch(ch)
 			{
