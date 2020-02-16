@@ -37,7 +37,6 @@ public class telephone
 		Scanner sc = new Scanner(System.in);
 		Calendar c = Calendar.getInstance();
 		ArrayList<Caller> alist = new ArrayList<Caller>(); // Array List that contains dummy data
-		ArrayList<MissedCall> mlist = new ArrayList<MissedCall>(); // Missed Call List that randomly fetches values from alist
 		alist.add(new Caller(1, "Ishank 1", "1234"));
 		alist.add(new Caller(2, "Ishank 2", "5678"));
 		alist.add(new Caller(3, "Ishank 3", "9012"));
@@ -45,6 +44,7 @@ public class telephone
 		alist.add(new Caller(5, "Private", "Not available"));
 		alist.add(new Caller(6, "Private", "Not available"));
 		alist.add(new Caller(7, "Private", "Not available"));
+		ArrayList<MissedCall> mlist = new ArrayList<MissedCall>(); // Missed Call List that randomly fetches values from alist
 
 		while(true)
 		{
