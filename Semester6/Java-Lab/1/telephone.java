@@ -39,11 +39,7 @@ public class telephone
 		ArrayList<Caller> alist = new ArrayList<Caller>(); // Array List that contains dummy data
 		alist.add(new Caller(1, "Ishank 1", "1234"));
 		alist.add(new Caller(2, "Ishank 2", "5678"));
-		alist.add(new Caller(3, "Ishank 3", "9012"));
-		alist.add(new Caller(4, "Ishank 4", "3456"));
-		alist.add(new Caller(5, "Private", "Not available"));
-		alist.add(new Caller(6, "Private", "Not available"));
-		alist.add(new Caller(7, "Private", "Not available"));
+		alist.add(new Caller(3, "Private", "Not available"));
 		ArrayList<MissedCall> mlist = new ArrayList<MissedCall>(); // Missed Call List that randomly fetches values from alist
 
 		while(true)
@@ -59,15 +55,12 @@ public class telephone
 					count--;
 				}
 				Random rand = new Random();
-				int randomNumber = rand.nextInt(7);
+				int randomNumber = rand.nextInt(3);
 				Caller caller = alist.get(randomNumber); // Random caller object generated
-				int H = c.get(Calendar.HOUR);
-				int M = c.get(Calendar.MINUTE);
-				int S = c.get(Calendar.SECOND);
-				String time1 = H + ":" + M + ":" + S;
+				String time1 = c.get(Calendar.HOUR) + ":" + c.get(Calendar.MINUTE) + ":" + c.get(Calendar.SECOND);
 				mlist.add(new MissedCall(caller.name_a, caller.phoneNo_a, time1)); // adding the random caller to mlist
 				count++;
-				System.out.println("Name - "+caller.name_a + "\nPhone " +caller.phoneNo_a +" \nAdded successfully" );
+				System.out.println("**Added successfully**" );
 				break;
 
 				case 2:
